@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import "flowbite";
 
 export default function Home() {
   // State to track the active index
-  const [activeIndex, setActiveIndex] = useState(0);
+  // const [activeIndex, setActiveIndex] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // const images = ["/c1.png", "/c2.png", "/c3.png", "/c4.png", "/c5.png"];
@@ -272,7 +273,7 @@ export default function Home() {
         <div className="max-w-xl mx-auto text-center">
           <div className="inline-flex  mx-auto rounded-full  ">
             <p className="text-4xl font-bold tracking-widest text-g uppercase text-black">
-              Our Products{" "}
+              Our Products
             </p>
           </div>
         </div>
@@ -287,7 +288,7 @@ export default function Home() {
               <Image
                 src={"/c1.png"}
                 fill
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                className="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
             </div>
@@ -296,7 +297,7 @@ export default function Home() {
               <Image
                 src={"/c2.png"}
                 fill
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                className="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
             </div>
@@ -305,25 +306,32 @@ export default function Home() {
               <Image
                 fill
                 src={"/c3.png"}
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                className="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
             </div>
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <div
+              className="relative hidden duration-700 ease-in-out"
+              data-carousel-item
+            >
               <Image
                 fill
                 src={"/c4.png"}
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
+                className="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="none"
               />
             </div>
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
-              <div className="text-black">hello</div>
+            <div
+              className=" hidden duration-700 ease-in-out"
+              data-carousel-item
+            >
+              {/* <div className="text-black">hello</div> */}
               <Image
-                fill
+                width={800}
+                height={150}
                 src={"/c5.png"}
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
+                className="relative block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="none"
               />
             </div>
           </div>
@@ -382,8 +390,8 @@ export default function Home() {
                 <path
                   stroke="currentColor"
                   strokeLinecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M5 1 1 5l4 4"
                 />
               </svg>
@@ -406,8 +414,8 @@ export default function Home() {
                 <path
                   stroke="currentColor"
                   strokeLinecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m1 9 4-4-4-4"
                 />
               </svg>
