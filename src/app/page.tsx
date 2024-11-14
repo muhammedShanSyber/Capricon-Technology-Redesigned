@@ -26,7 +26,7 @@ export default function Home() {
     },
     {
       question:
-        "What is the difference between staff augmentation & managed services ?",
+        "What is the difference between staff augmentation and managed services ?",
       answer:
         "IT staff augmentation model assumes the only service commitment is hours of work. The outsourcing model  (or managed services) assumes that the supplier assumes all the risks of meeting the service commitment.",
     },
@@ -111,12 +111,12 @@ export default function Home() {
       <div className="absolute font-extrabold text-1xl top-0 text-white z-10 border-2 px-14 py-2  rounded-xl">
         96% Client <br /> Satisfaction
       </div>
-      <div className="absolute font-extrabold text-1xl top-10 text-white z-10 border-2 px-14 py-2  rounded-xl">
+      <div className="absolute font-extrabold text-1xl top-10 left-80 text-white z-10 border-2 px-14 py-2  rounded-xl">
         12 Months
         <br />
         Average Project Duration
       </div>
-      <div className="absolute font-extrabold text-1xl top-20 text-white z-10 border-2 px-14 py-2  rounded-xl">
+      <div className="absolute font-extrabold text-1xl top-80 text-white z-10 border-2 px-14 py-2  rounded-xl">
         20+
         <br />
         Projects Delivered
@@ -545,13 +545,13 @@ export default function Home() {
               </h2>
 
               <p className="mt-2 text-base/relaxed text-black font-bold h-full">
-                Financial technology (FinTech) & artificial intelligence (AI)
+                Financial technology (FinTech) and artificial intelligence (AI)
                 are two cutting-edge innovations that have recently altered the
                 financial sector. AI can boost economic growth by 26% and
                 financial services revenue by 34%. It is pivotal for FinTech’s
-                rapid advancements, enabling financial institutions & businesses
-                to analyze vast amounts of data, identify patterns, & make
-                data-driven decisions efficiently.
+                rapid advancements, enabling financial institutions and
+                businesses to analyze vast amounts of data, identify patterns,
+                and make data-driven decisions efficiently.
                 <a>Read more</a>
               </p>
             </div>
@@ -667,7 +667,7 @@ export default function Home() {
                   <textarea
                     className="w-full rounded-lg border-gray-200 p-3 text-sm"
                     placeholder="Message"
-                    rows="8"
+                    rows={8}
                     id="message"
                   ></textarea>
                 </div>
@@ -695,7 +695,7 @@ export default function Home() {
                 }}
               />
               <p className=" absolute text-white font-bold text-2xl bottom-0 mb-10 p-4">
-                Please, leave your contact details & describe your project
+                Please, leave your contact details and describe your project
                 below. We’ll get back to you within 24 hrs.
               </p>
             </div>
